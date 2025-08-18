@@ -204,6 +204,7 @@ public class CartServiceImpl implements CartService {
             orderItem.setUnitPrice(cartItem.getUnitPrice());
             orderItem.setPrice(cartItem.getTotalPrice());
             order.getItems().add(orderItem);
+            
 
             // Mettre à jour le stock
             product.setQuantity(product.getQuantity() - cartItem.getQuantity());
